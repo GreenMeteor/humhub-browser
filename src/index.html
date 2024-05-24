@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HumHub Browser</title>
+</head>
+<body>
+  <h1>Welcome to HumHub Browser</h1>
+  <form id="url-form">
+    <input type="text" id="url-input" placeholder="Enter URL">
+    <button type="submit">Go</button>
+  </form>
+
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    const form = document.getElementById('url-form');
+    const input = document.getElementById('url-input');
+
+    form.addEventListener('submit', (event) => {
+      event.preventDefault();
+      const url = input.value.trim();
+      if (url) {
+        ipcRenderer.send('change-url', url);
+      }
+    });
+  </script>
+</body>
+</html>

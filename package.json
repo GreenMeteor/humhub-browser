@@ -1,0 +1,37 @@
+{
+  "name": "humhub-browser",
+  "version": "1.0.0",
+  "description": "A lightweight desktop application for browsing HumHub websites.",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "Green Meteor",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^30.0.8",
+    "electron-builder": "^24.13.3"
+  },
+  "build": {
+    "appId": "com.greenmeteor.humhub-browser",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "src/**/*",
+      "!src/**/*.spec.js"
+    ],
+    "mac": {
+      "category": "your.app.category.type"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage"
+    }
+  }
+}
