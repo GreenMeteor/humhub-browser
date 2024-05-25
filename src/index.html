@@ -4,13 +4,64 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HumHub Browser</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f0f0f0;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      color: #333;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      font-size: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      width: 300px;
+    }
+
+    button[type="submit"] {
+      padding: 10px 20px;
+      font-size: 1rem;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button[type="submit"]:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <h1>Welcome to HumHub Browser</h1>
-  <form id="url-form">
-    <input type="text" id="url-input" placeholder="Enter URL">
-    <button type="submit">Go</button>
-  </form>
+  <div class="container">
+    <h1>Welcome to the HumHub Browser</h1>
+    <p>Explore HumHub communities with ease!</p>
+    <form id="url-form">
+      <input type="text" id="url-input" placeholder="Enter URL">
+      <button type="submit">Go</button>
+    </form>
+  </div>
 
   <script>
     const { ipcRenderer } = require('electron');

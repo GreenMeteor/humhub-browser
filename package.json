@@ -1,5 +1,6 @@
 {
   "name": "humhub-browser",
+  "productName": "HumHub Browser",
   "version": "1.0.0",
   "description": "A lightweight desktop application for browsing HumHub websites.",
   "main": "src/main.js",

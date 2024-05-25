@@ -1,5 +1,5 @@
 {
-  "gcm_sender_id": "103953800507",
+  "gcm_sender_id": "",
   "icons": [
     {"src": "/uploads/icon/48x48.png?v=1569257392", "type": "image/png", "sizes": "48x48"},
     {"src": "/uploads/icon/72x72.png?v=1569257392", "type": "image/png", "sizes": "72x72"},
@@ -8,9 +8,9 @@
     {"src": "/uploads/icon/512x512.png?v=1569257392", "type": "image/png", "sizes": "512x512"}
   ],
   "display": "standalone",
-  "start_url": "https://community.humhub.com",
-  "short_name": "HumHub Community",
-  "name": "HumHub Community",
+  "start_url": "",
+  "short_name": "",
+  "name": "",
   "background_color": "#435f6f",
   "theme_color": "#435f6f"
 }
