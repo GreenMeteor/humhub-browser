@@ -1,11 +1,31 @@
 {
   "gcm_sender_id": "",
   "icons": [
-    {"src": "/uploads/icon/48x48.png?v=1569257392", "type": "image/png", "sizes": "48x48"},
-    {"src": "/uploads/icon/72x72.png?v=1569257392", "type": "image/png", "sizes": "72x72"},
-    {"src": "/uploads/icon/96x96.png?v=1569257392", "type": "image/png", "sizes": "96x96"},
-    {"src": "/uploads/icon/192x192.png?v=1569257392", "type": "image/png", "sizes": "192x192"},
-    {"src": "/uploads/icon/512x512.png?v=1569257392", "type": "image/png", "sizes": "512x512"}
+    {
+      "src": "/uploads/icon/48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/uploads/icon/72x72.png",
+      "type": "image/png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "/uploads/icon/96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/uploads/icon/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/uploads/icon/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
   ],
   "display": "standalone",
   "start_url": "",
