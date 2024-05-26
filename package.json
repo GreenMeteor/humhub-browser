@@ -16,23 +16,29 @@
   },
   "build": {
     "appId": "com.greenmeteor.browser",
+    "productName": "HumHub Browser",
     "directories": {
       "output": "dist"
     },
     "files": [
-      "main.js",
-      "preload.js",
-      "src/**/*",
+      "src/main.js",
+      "src/preload.js",
+      "src/index.html",
+      "src/icons/**/*",
       "!src/**/*.spec.js"
     ],
     "mac": {
-      "category": "Network"
+      "category": "public.app-category.networking",
+      "icon": "src/icons/512x512.png",
+      "target": "dmg"
     },
     "win": {
+      "icon": "src/icons/512x512.png",
       "target": "nsis"
     },
     "linux": {
-      "target": "AppImage",
+      "icon": "src/icons/512x512.png",
+      "target": ["AppImage", "deb", "rpm"],
       "category": "Network"
     }
   }
