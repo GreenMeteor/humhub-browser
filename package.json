@@ -1,45 +1,39 @@
 {
-  "name": "humhub-browser",
-  "productName": "HumHub Browser",
-  "version": "1.0.0",
-  "description": "A lightweight desktop application for browsing HumHub websites.",
-  "main": "src/main.js",
-  "scripts": {
-    "start": "electron .",
-    "build": "electron-builder"
-  },
   "author": "Green Meteor",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^30.0.7",
-    "electron-builder": "^24.13.3"
-  },
   "build": {
     "appId": "com.greenmeteor.browser",
-    "productName": "HumHub Browser",
     "directories": {
       "output": "dist"
     },
-    "files": [
-      "src/main.js",
-      "src/preload.js",
-      "src/index.html",
-      "src/icons/**/*",
-      "!src/**/*.spec.js"
-    ],
+    "files": [ "src/main.js", "src/preload.js", "src/index.html", "src/icons/**/*", "!src/**/*.spec.js" ],
+    "linux": {
+      "category": "Network",
+      "icon": "src/icons/512x512.png",
+      "target": [ "AppImage", "deb", "rpm" ]
+    },
     "mac": {
       "category": "public.app-category.networking",
       "icon": "src/icons/512x512.png",
       "target": "dmg"
     },
+    "productName": "HumHub Browser",
     "win": {
       "icon": "src/icons/512x512.png",
       "target": "nsis"
-    },
-    "linux": {
-      "icon": "src/icons/512x512.png",
-      "target": ["AppImage", "deb", "rpm"],
-      "category": "Network"
     }
-  }
+  },
+  "description": "A lightweight desktop application for browsing HumHub websites.",
+  "devDependencies": {
+    "electron": "^30.0.9",
+    "electron-builder": "^24.13.3"
+  },
+  "license": "ISC",
+  "main": "src/main.js",
+  "name": "humhub-browser",
+  "productName": "HumHub Browser",
+  "scripts": {
+    "build": "electron-builder",
+    "start": "electron ."
+  },
+  "version": "1.0.0"
 }
