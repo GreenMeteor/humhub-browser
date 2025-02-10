@@ -24,7 +24,7 @@
   },
   "description": "A lightweight desktop application for browsing HumHub websites.",
   "devDependencies": {
-    "electron": "^34.0.2",
+    "electron": "^34.1.1",
     "electron-builder": "^25.1.8"
   },
   "license": "ISC",
