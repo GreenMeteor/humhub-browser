@@ -24,7 +24,7 @@
   },
   "description": "A lightweight desktop application for browsing HumHub websites.",
   "devDependencies": {
-    "electron": "^40.4.1",
+    "electron": "^40.6.0",
     "electron-builder": "^26.7.0",
     "glob": "^13.0.3",
     "tar": ">=7.5.9"
