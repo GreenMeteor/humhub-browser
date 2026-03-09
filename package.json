@@ -27,7 +27,7 @@
     "electron": "^40.6.1",
     "electron-builder": "^26.8.1",
     "glob": "^13.0.6",
-    "tar": ">=7.5.9"
+    "tar": ">=7.5.11"
   },
   "license": "ISC",
   "main": "src/main.js",
